@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "/assets/icons/icon_512x512.3ca11a97eb7d90b61fc3db0f3c5dcdb6.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon_256x256.873242da1488f53efeaca94de308539e.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon_128x128.225c312e650131cfe5a2119fd958867e.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon_64x64.cc93e1e57f8f05b2018da43246228703.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon_32x32.8512a747dff804c24088ee870a175bd5.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon_16x16.42538208c9f78c3d7ef4e413b8bfebfe.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "name": "PWA Text Editor",
+  "short_name": "PWA",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "This is a text editor that runs in your browser",
+  "background_color": "blueviolet",
+  "theme_color": "blueviolet"
+}
