@@ -3,8 +3,10 @@ let promptLater = null;
 // Logic for installing the PWA
 // TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
     promptLater = event;
     butInstall.classList.remove('hidden');
+    console.log(promptLater);
 });
 
 // TODO: Implement a click event handler on the `butInstall` element

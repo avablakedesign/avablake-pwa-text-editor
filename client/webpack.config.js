@@ -8,7 +8,7 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 
 module.exports = () => {
   return {
-    mode: 'development',
+    mode: 'production',
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
@@ -28,6 +28,8 @@ module.exports = () => {
       }),
       new WebpackPwaManifest({
         inject: true,
+        //when this is set to false it removes hashes from images.
+        fingerprints: false,
         name: 'PWA Text Editor',
         short_name: 'PWA',
         description: 'This is a text editor that runs in your browser',
@@ -38,7 +40,7 @@ module.exports = () => {
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [16, 32, 64, 128, 256, 512],
+            sizes: [16, 32, 64, 96, 128, 256, 512],
             destination: path.join('assets', 'icons'),
           },
         ],
@@ -64,5 +66,5 @@ module.exports = () => {
         },
       ],
     },
-  };
+  }
 };

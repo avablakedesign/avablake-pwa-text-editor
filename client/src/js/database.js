@@ -1,4 +1,3 @@
-import { request } from 'express';
 import { openDB } from 'idb';
 
 const initdb = async () =>
@@ -15,7 +14,7 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
-  console.error('putDb not implemented');
+  console.log('putDb implemented');
   const indexDB = await openDB('jate', 1);
   const obj = indexDB.transaction('jate', 'readwrite');
   const savedObj = obj.objectStore('jate');
@@ -25,7 +24,7 @@ export const putDb = async (content) => {
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.error('getDb not implemented');
+  console.log('getDb implemented');
   const indexDB = await openDB('jate', 1);
   const obj = indexDB.transaction('jate', 'readonly');
   const savedObj = obj.objectStore('jate');
@@ -34,6 +33,6 @@ export const getDb = async () => {
   if(saveResult) {
     return saveResult.value;
   }
-
+  return null;
 }
 initdb();
