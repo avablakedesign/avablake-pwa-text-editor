@@ -6,7 +6,7 @@
   "engines": {"node":"18.x"},
   "scripts": {
     "start:dev": "",
-    "start": "cd client && npm run build && cd ../server && node server.js",
+    "start": "cd server && node server.js",
     "server": "",
     "build": "",
     "install": "",
